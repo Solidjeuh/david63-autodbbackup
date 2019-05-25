@@ -37,9 +37,16 @@ if (empty($lang) || !is_array($lang))
 //
 
 $lang = array_merge($lang, array(
-	'ACP_AUTO_DB_BACKUP'			=> 'Auto Database Backup',
-	'ACP_AUTO_DB_BACKUP_SETTINGS'	=> 'Auto backup instellingen',
+	'CLOSE_TEXT'			=> 'Klaar',
+	'CURRENT_TEXT_DATE'		=> 'Vandaag',
+	'CURRENT_TEXT_TIME'		=> 'Nu',
+	'HOUR_TEXT'				=> 'Uur',
+	'MINUTE_TEXT'			=> 'Minuut',
+	'NEXT_TEXT'				=> 'Volgende>',
+	'PREV_TEXT'				=> '<Vorige',
+	'TIME_TEXT'				=> 'Tijd',
 
-	'LOG_AUTO_DB_BACKUP'			=> '<strong>Auto database backup compleet</strong>',
-	'LOG_AUTO_DB_BACKUP_SETTINGS'	=> '<strong>Gewijzigde Auto Database Backup instellingen</strong>',
+	// Translators note: retain the format of [" "] as they are creating JSON compatible arrays
+	'DAY_NAMES_MIN'			=> '["Zo", "Ma", "Di", "Woe", "Do", "vrij", "Zat"]',
+	'MONTH_NAMES' 			=> '["Januari", "Februari", "Maart", "April", "Mei", "Juni", "July", "Augustus", "September", "Oktober", "November", "December"]',
 ));

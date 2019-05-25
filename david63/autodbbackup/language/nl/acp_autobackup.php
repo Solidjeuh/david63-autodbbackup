@@ -3,7 +3,6 @@
 *
 * @package Auto db Backup (3.2)
 * @copyright (c) 2015 david63
-* Nederlandse vertaling @ Solidjeuh <https://www.muziekpromo.net>
 * @license GNU General Public License, version 2 (GPL-2.0)
 *
 */
@@ -38,33 +37,42 @@ if (empty($lang) || !is_array($lang))
 //
 
 $lang = array_merge($lang, array(
-	'AUTO_DB_BACKUP_COPIES'				=> 'Opgeslagen backups',
-	'AUTO_DB_BACKUP_COPIES_EXPLAIN'		=> 'Het aantal back-ups dat op de server wordt opgeslagen.<br />0 betekent uitgeschakeld en alle back-ups zullen worden opgeslagen op de server.',
-	'AUTO_DB_BACKUP_ENABLE'				=> 'Auto database back-up inschakelen',
-	'AUTO_DB_BACKUP_ENABLE_EXPLAIN'		=> 'Automatische back-up van databases in of uitschakelen',
-	'AUTO_DB_BACKUP_FILETYPE'			=> 'Bestandstype',
-	'AUTO_DB_BACKUP_FILETYPE_EXPLAIN'	=> 'Kies het bestandstype voor back-ups.',
-	'AUTO_DB_BACKUP_FREQ'				=> 'Back-up frequentie',
-	'AUTO_DB_BACKUP_FREQ_EXPLAIN'		=> 'Stel de back-up frequentie in uren in.',
-	'AUTO_DB_BACKUP_OPTIMIZE'			=> 'Optimaliseer de database voordat u de back-up uitvoert',
-	'AUTO_DB_BACKUP_OPTIMIZE_EXPLAIN'	=> 'Optimaliseer alleen niet-optimale databasetabellen voordat u de back-up maakt.',
-	'AUTO_DB_BACKUP_SETTINGS'			=> 'Auto database back-up instellingen',
-	'AUTO_DB_BACKUP_SETTINGS_CHANGED'	=> 'Auto database back-up instellingen gewijzigd.',
-	'AUTO_DB_BACKUP_SETTINGS_EXPLAIN'	=> 'Hier kunt u standaard instellingen instellen voor automatische database backups. Afhankelijk van uw server configuratie kunt u mogelijk de database comprimeren.<br />Alle back-ups worden opgeslagen in de <samp>/store/</samp> folder. U kunt de backups herstellen via het <em>"Herstellen"</em> menu.',
-	'AUTO_DB_BACKUP_TIME'				=> 'Volgende back-up tijd',
-	'AUTO_DB_BACKUP_TIME_ERROR'			=> 'The <strong>volgende back-up tijd</strong> De tijd moet in de toekomst worden gedefinieerd.',
-	'AUTO_DB_BACKUP_TIME_EXPLAIN'		=> 'Het tijdstip waarop de volgende back-up van de database moet worden gemaakt.<br /><strong>Opgelet:</strong> De opgegeven datum/tijd moet in de toekomst liggen.',
+	'AUTO_DB_BACKUP_COPIES'					=> 'Opgeslagen back-ups',
+	'AUTO_DB_BACKUP_COPIES_EXPLAIN'			=> 'Het aantal back-ups dat op de server wordt opgeslagen.<br>0 betekent uitgeschakeld en alle back-ups worden op de server opgeslagen.',
+	'AUTO_DB_BACKUP_ENABLE'					=> 'Automatische database backup inschakelen',
+	'AUTO_DB_BACKUP_ENABLE_EXPLAIN'			=> 'Automatische backup van databases inschakelen of uitschakelen',
+	'AUTO_DB_BACKUP_FILETYPE'				=> 'Bestandstype',
+	'AUTO_DB_BACKUP_FILETYPE_EXPLAIN'		=> 'Selecteer het bestandstype voor de back-ups.',
+	'AUTO_DB_BACKUP_FREQ'					=> 'Backup frequentie',
+	'AUTO_DB_BACKUP_FREQ_EXPLAIN'			=> 'Stel de backup frequentie in uren in.',
+	'AUTO_DB_BACKUP_MAINTAIN_FREQ'			=> 'De tijd van de backup frequentie behouden',
+	'AUTO_DB_BACKUP_MAINTAIN_FREQ_EXPLAIN'	=> 'Dit instellen op <strong>“Ja”</strong> betekent dat de backup frequentietijd zal worden gehandhaafd.<br>Bijvoorbeeld: als de tijd is ingesteld op 23:15 uur en de frequentie is ingesteld op 24 uur, is de volgende backup de volgende dag om 23:15 uur. Als dit is ingesteld op <strong>“Nee”</strong> dan zal de volgende backup 24 uur na de laatste backup gebeuren.',
+	'AUTO_DB_BACKUP_OPTIMIZE'				=> 'Optimaliseer de database voordat de backup uitvoert',
+	'AUTO_DB_BACKUP_OPTIMIZE_EXPLAIN'		=> 'Optimaliseer alleen niet optimale databasetabellen voordat de backup maakt.',
+	'AUTO_DB_BACKUP_SETTINGS'				=> 'Auto database backup instellingen',
+	'AUTO_DB_BACKUP_SETTINGS_CHANGED'		=> 'Auto database backup instellingen gewijzigd.',
+	'AUTO_DB_BACKUP_SETTINGS_EXPLAIN'		=> 'Hier kunt u standaardinstellingen voor automatische database backups instellen. Afhankelijk van uw serverconfiguratie kunt u mogelijk de database comprimeren.<br>Alle back-ups worden opgeslagen in de <samp>/store/</samp> folder. U kunt de backup herstellen via het paneel <em>Herstellen</em>.',
+	'AUTO_DB_BACKUP_TIME'					=> 'Volgende backup tijd',
+	'AUTO_DB_BACKUP_TIME_ERROR'				=> 'De <strong>Volgende backup tijd</strong> is niet correct. De tijd moet in de toekomst worden gedefinieerd.',
+	'AUTO_DB_BACKUP_TIME_EXPLAIN'			=> 'Het tijdstip waarop de volgende backup van de database moet worden gemaakt.<br><strong>Merk op:</strong> De opgegeven datum/tijd moet in de toekomst liggen.',
 
-	'DATE_TIME_ERROR'					=> 'The <strong>volgende back-up datum</strong> is ongeldig.',
-
-	'HOUR'		=> 'Uur',
-	'MINUTE'	=> 'Minuut',
+	'CLICK_SELECT'							=> 'Klik in het tekstvak om de datum/tijd te selecteren',
+	'DATE_FORMAT_ERROR'						=> 'De volgende backup datum/tijdnotatie is ongeldig.',
+	'VERSION'								=> 'Versie',
 
 	'FILETYPE'	=> array(
 		'gzip'	=> 'gzip',
 		'bzip2'	=> 'bzip2',
 		'text'	=> 'text',
 	),
+));
 
-	'VERSION'							=> 'Versie',
+// Donate
+$lang = array_merge($lang, array(
+	'DONATE'					=> 'Doneer',
+	'DONATE_EXTENSIONS'			=> 'Doneer aan mijn extensies',
+	'DONATE_EXTENSIONS_EXPLAIN'	=> 'Deze extensie is, net als bij al mijn extensies, volledig gratis. Als u er baat bij heeft gehad, kunt u overwegen een donatie te doen door op de knop PayPal donatie aan de overkant te klikken - ik zou het op prijs stellen. Ik beloof dat er geen spam of verzoeken om verdere donaties zullen zijn, hoewel ze altijd welkom zouden zijn.',
+
+	'PAYPAL_BUTTON'				=> 'Doneer met de PayPal knop',
+	'PAYPAL_TITLE'				=> 'PayPal - De veiligere, gemakkelijkere manier om online te betalen!',
 ));
